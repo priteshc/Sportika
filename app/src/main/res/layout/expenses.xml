@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/red_btn_bg_pressed_color"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="EXPENSES"
+            android:typeface="normal"
+            android:textStyle="bold"
+            android:textColor="@color/WhiteSmoke"
+            android:textSize="22dp" />
+
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/red_btn_bg_color"
+
+            >
+
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:focusableInTouchMode="true"
+                        android:layout_marginBottom="20dp"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="TITLE :"
+                            android:textColor="@color/WhiteSmoke"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginLeft="30dp"
+                            android:textSize="18dp"
+
+                            />
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="40dp"
+                           android:background="@drawable/bg_edittext_selector"
+                           android:layout_marginLeft="30dp"
+                           android:layout_marginRight="30dp"
+                           android:layout_marginTop="5dp"
+                           android:paddingLeft="5dp"
+                           android:textColor="@color/Black"
+
+                           />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="DESCRIPTION :"
+                            android:textColor="@color/WhiteSmoke"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginLeft="30dp"
+                            android:textSize="18dp"
+
+                            />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/bg_edittext_selector"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginTop="5dp"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="DATE :"
+                            android:textColor="@color/WhiteSmoke"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginLeft="30dp"
+                            android:textSize="18dp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/bg_edittext_selector"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Select date"
+                            android:gravity="center"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="AMOUNT :"
+                            android:textColor="@color/WhiteSmoke"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginLeft="30dp"
+                            android:textSize="18dp"
+
+                            />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/bg_edittext_selector"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginTop="5dp"
+                            />
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>
+

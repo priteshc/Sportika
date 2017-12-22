@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Sportika</string>
+
+    <string name="party">Add Party</string>
+    <string name="purchase">Purchase</string>
+    <string name="sale">Sale</string>
+    <string name="item">Items</string>
+</resources>
