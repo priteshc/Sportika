@@ -176,4 +176,7 @@
     <color name="edit_text_bg_gray_color">#e9eaf0</color>#ebecf1
     <color name="edit_text_disabled_bg_gray_color">#ebecf1</color>
 
+    <color name="toolcolor">#ef5350</color>
+
+
 </resources>
