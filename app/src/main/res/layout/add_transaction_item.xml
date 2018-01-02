@@ -72,6 +72,18 @@
                             />
 
 
+                    <com.jaredrummler.materialspinner.MaterialSpinner
+                        app:ms_dropdown_max_height="250dp"
+                        app:ms_dropdown_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="20dp"
+                        app:ms_text_color="@color/Black"
+                        app:ms_background_color="@color/spinn"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:hint="Brand"
+                        />
 
                     <com.jaredrummler.materialspinner.MaterialSpinner
                         app:ms_dropdown_max_height="250dp"
@@ -86,6 +98,18 @@
                         android:hint="Flavours"
                         />
 
+                    <com.jaredrummler.materialspinner.MaterialSpinner
+                        app:ms_dropdown_max_height="250dp"
+                        app:ms_dropdown_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="20dp"
+                        app:ms_text_color="@color/Black"
+                        app:ms_background_color="@color/spinn"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:hint="Weight"
+                        />
 
 
 
