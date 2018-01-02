@@ -51,6 +51,13 @@ public class Purchase extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                finish();
+            }
+        });
 
 
 
@@ -87,6 +94,15 @@ public class Purchase extends AppCompatActivity {
 
         dialog.setContentView(R.layout.add_transaction_item);
 
+        Button add = dialog.findViewById(R.id.add);
+
+        add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                OpenPopUp1();
+            }
+        });
 
         // Include dialog.xml file
 
@@ -103,7 +119,43 @@ public class Purchase extends AppCompatActivity {
     }
 
 
-    @Override
+
+    private void OpenPopUp1() {
+        //Find screen size
+        WindowManager manager = (WindowManager) getSystemService(WINDOW_SERVICE);
+        Display display = manager.getDefaultDisplay();
+        Point point = new Point();
+        display.getSize(point);
+        int width = point.x;
+        int height = point.y;
+        int smallerDimension = width < height ? width : height;
+        smallerDimension = smallerDimension * 3 / 4;
+
+        dialog = new Dialog(Purchase.this);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        //  dialog.getWindow().getAttributes().windowAnimations = R.style.animationdialog;
+
+        dialog.setContentView(R.layout.add_product);
+
+
+        // Include dialog.xml file
+
+
+
+
+        // Set dialog title
+//            dialog.setTitle("Scan this code to redeem offer");
+
+        // set values for custom dialog components - text, image and button
+        dialog.show();
+
+
+    }
+
+
+
+  /*  @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 
         getMenuInflater().inflate(R.menu.addicon, menu);
@@ -120,7 +172,7 @@ public class Purchase extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
 
-    }
+    }*/
 
 
 }

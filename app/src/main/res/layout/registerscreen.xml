@@ -25,25 +25,21 @@
             android:orientation="vertical"
             android:layout_centerInParent="true"
             android:id="@+id/li"
-
+            android:focusableInTouchMode="true"
 
             >
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="numberDecimal"
+                    android:inputType="text"
                     android:maxLines="3"
                     android:layout_marginTop="25dp"
                     android:layout_marginLeft="30dp"
                     android:layout_marginRight="30dp"
                     android:padding="10dp"
-
-                    android:focusableInTouchMode="true"
                     android:hint="Business Name"
                     android:gravity="left|top"
-                    android:maxLength="500"
-                    android:scrollbars="vertical"
                     android:textSize="18sp"
                     android:layout_gravity="bottom"
                     android:background="@drawable/bg_edittext_selector"
@@ -80,7 +76,7 @@
                         <EditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:inputType="textMultiLine"
+                            android:inputType="textEmailAddress"
                             android:maxLines="3"
                             android:focusableInTouchMode="true"
                             android:hint="Email Id"

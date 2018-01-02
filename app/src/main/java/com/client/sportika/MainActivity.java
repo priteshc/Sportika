@@ -54,7 +54,6 @@ public class MainActivity extends AppCompatActivity {
 
          bottomNavigation = (AHBottomNavigation) findViewById(R.id.bottom_navigation);
 
-
 //         item1 = new AHBottomNavigationItem(R.string.party, R.drawable.addparty, R.color.sweet_dialog_bg_color);
          item2 = new AHBottomNavigationItem(R.string.purchase, R.drawable.purchase, R.color.sweet_dialog_bg_color);
          item3 = new AHBottomNavigationItem(R.string.sale, R.drawable.sales, R.color.sweet_dialog_bg_color);
@@ -90,8 +89,8 @@ public class MainActivity extends AppCompatActivity {
      //   bottomNavigation.manageFloatingActionButtonBehavior(floatingActionButton);
 
 // Change colors
-        bottomNavigation.setAccentColor(Color.parseColor("#e74c3c"));
-        bottomNavigation.setInactiveColor(Color.parseColor("#e74c3c"));
+        bottomNavigation.setAccentColor(Color.parseColor("#CD282F"));
+        bottomNavigation.setInactiveColor(Color.parseColor("#CD282F"));
 
         bottomNavigation.setTitleState(AHBottomNavigation.TitleState.ALWAYS_SHOW);
 
