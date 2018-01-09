@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+        <android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            app:cardCornerRadius="1dp"
+            app:cardElevation="3dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="3dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/ll1"
+                    android:padding="5dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp"
+                        >
+
+
+                        <TextView
+                            android:id="@+id/name1"
+                            android:layout_width="match_parent"
+                            android:textColor="#2F4F4F"
+                            android:text="Product name  :"
+                            android:layout_marginTop="5dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="20dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="match_parent"
+                            android:textColor="#000000"
+                            android:text="name"
+                            android:layout_marginTop="5dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:layout_marginLeft="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+                            />
+
+                    </LinearLayout>
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/desig11"
+                            android:layout_width="match_parent"
+                            android:textColor="#2F4F4F"
+                            android:text="Brand Name :"
+                            android:layout_marginTop="5dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="20dp"
+                            />
+
+
+                        <TextView
+                            android:id="@+id/brand"
+                            android:layout_width="match_parent"
+                            android:textColor="#000000"
+                            android:text="designation"
+                            android:layout_marginTop="5dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:layout_marginLeft="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/mobile1"
+                            android:layout_width="match_parent"
+                            android:textColor="#2F4F4F"
+                            android:text="Flavours   :"
+                            android:layout_marginTop="5dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="20dp"
+                            />
+
+
+                        <TextView
+                            android:id="@+id/flvr"
+                            android:layout_width="match_parent"
+                            android:textColor="#000000"
+                            android:text="yzzzzzzzzzzzzzzz"
+                            android:layout_marginTop="5dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:layout_marginLeft="0dp"
+
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+                            />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp"
+                        >
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:textColor="#2F4F4F"
+                            android:text="Weight   :"
+                            android:layout_marginTop="5dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="20dp"
+                            />
+
+
+                        <TextView
+                            android:id="@+id/weight"
+                            android:layout_width="match_parent"
+                            android:textColor="#000000"
+                            android:text="yzzzzzzzzzzzzzzz"
+                            android:layout_marginTop="5dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:layout_marginLeft="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+                            />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:textColor="#2F4F4F"
+                            android:text="Quantity   :"
+                            android:layout_marginTop="5dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="20dp"
+                            />
+
+
+                        <TextView
+                            android:id="@+id/quant"
+                            android:layout_width="match_parent"
+                            android:textColor="#000000"
+                            android:text="yzzzzzzzzzzzzzzz"
+                            android:layout_marginTop="5dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:layout_marginLeft="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_alignParentTop="true"
-    android:layout_alignParentLeft="true"
-    android:layout_alignParentStart="true">
+    android:fitsSystemWindows="true"
+    >
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -20,13 +21,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-
-
             android:text="PURCHASE"
-            android:typeface="normal"
-            android:textStyle="bold"
             android:textColor="@color/WhiteSmoke"
-            android:textSize="22dp" />
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:typeface="normal" />
 
 
     </android.support.v7.widget.Toolbar>
@@ -36,7 +35,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="?actionBarSize"
         >
 
 
@@ -92,11 +91,11 @@
 
                             <EditText
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:inputType="numberDecimal"
+                                android:layout_height="80dp"
+                                android:inputType="textMultiLine"
                                 android:maxLines="3"
                                 android:focusableInTouchMode="true"
-                                android:hint="Location"
+                                android:hint="Address"
                                 android:gravity="left|top"
                                 android:maxLength="500"
                                 android:scrollbars="vertical"
@@ -133,18 +132,39 @@
                                 />
 
 
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="30dp"
+                            >
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Add Item"
                             android:background="@drawable/bg_edit_text1"
-                            android:layout_marginTop="25dp"
-                            android:layout_marginLeft="30dp"
-                            android:layout_marginRight="30dp"
                             android:padding="10dp"
                             android:id="@+id/add"
+                            android:layout_weight="1"
+                            android:layout_marginRight="5dp"
                             />
 
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="View Item"
+                                android:background="@drawable/bg_edit_text1"
+                                android:padding="10dp"
+                                android:id="@+id/view"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="5dp"
+                                />
+
+
+                        </LinearLayout>
 
 
 
@@ -154,7 +174,7 @@
                                 android:inputType="numberDecimal"
                                 android:maxLines="3"
                                 android:focusableInTouchMode="true"
-                                android:hint="Total Amount"
+                                android:hint="Amount"
                                 android:gravity="left|top"
                                 android:maxLength="500"
                                 android:scrollbars="vertical"
@@ -165,13 +185,70 @@
                                 android:textSize="18sp"
                                 android:layout_gravity="bottom"
                                 android:background="@drawable/bg_edit_text1"
-
+                                android:id="@+id/total"
+                                android:textColor="#000000"
+                                android:enabled="false"
                                 />
 
 
 
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="15dp"
+                            >
 
-                         <LinearLayout
+                            <com.jaredrummler.materialspinner.MaterialSpinner
+                                app:ms_dropdown_max_height="250dp"
+                                app:ms_dropdown_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                app:ms_text_color="@color/Black"
+                                app:ms_background_color="@color/spinn"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginLeft="25dp"
+                                android:hint="Tax Percent"
+                                android:layout_weight="1"
+                                android:id="@+id/tax"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="0.0"
+                                android:gravity="center"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="30dp"
+                                android:padding="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_edit_text1"
+                                android:id="@+id/taxvalue"
+                                />
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:focusableInTouchMode="true"
+                            android:hint="Total Amount"
+                            android:gravity="left|top"
+                            android:scrollbars="vertical"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="30dp"
+                            android:padding="10dp"
+                            android:textSize="18sp"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/bg_edit_text1"
+                            android:id="@+id/totalamt"
+                            />
+
+
+                        <LinearLayout
                              android:layout_width="match_parent"
                              android:layout_height="wrap_content"
                              android:orientation="horizontal"
@@ -223,7 +300,7 @@
 
 
                         <com.jaredrummler.materialspinner.MaterialSpinner
-                            android:id="@+id/state"
+                            android:id="@+id/payment"
                             app:ms_dropdown_max_height="250dp"
                             app:ms_dropdown_height="wrap_content"
                             android:layout_width="match_parent"
@@ -235,7 +312,32 @@
                             android:layout_marginLeft="30dp"
                             android:background="@drawable/bg_edit_text1"
                             android:hint="Payment Type"
+
                             />
+
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="30dp"
+                             android:text="Take picture"
+                            android:visibility="gone"
+                            android:id="@+id/takepic"
+                            />
+
+                        <ImageView android:id="@+id/imageView1"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="30dp"
+                            android:visibility="gone"
+
+                            />
+
+
 
 
                             <EditText
@@ -280,19 +382,13 @@
 
                 </ScrollView>
 
-
-
         </LinearLayout>
-
-
-
 
     </RelativeLayout>
 
+    <include layout="@layout/bottom_content1"
+        />
 
 
 
-
-
-</RelativeLayout>
-
+</android.support.design.widget.CoordinatorLayout>

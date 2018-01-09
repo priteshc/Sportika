@@ -40,7 +40,7 @@
 
 
                         <EditText
-                            android:id="@+id/desc"
+                            android:id="@+id/proname"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:inputType="textMultiLine"
@@ -64,7 +64,7 @@
                         <EditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:inputType="numberDecimal"
+                            android:inputType="text"
                             android:maxLines="3"
                             android:focusableInTouchMode="true"
                             android:hint="Flavours"
@@ -78,6 +78,7 @@
                             android:textSize="18sp"
                             android:layout_gravity="bottom"
                             android:background="@drawable/bg_edit_text1"
+                            android:id="@+id/proflvr"
 
                             />
 
@@ -86,7 +87,7 @@
                         <EditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:inputType="numberDecimal"
+                            android:inputType="text"
                             android:maxLines="3"
                             android:focusableInTouchMode="true"
                             android:hint="Brand Name"
@@ -100,8 +101,29 @@
                             android:textSize="18sp"
                             android:layout_gravity="bottom"
                             android:background="@drawable/bg_edit_text1"
-
+                             android:id="@+id/proband"
                             />
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:maxLines="3"
+                        android:focusableInTouchMode="true"
+                        android:hint="Item Weight"
+                        android:gravity="left|top"
+                        android:maxLength="500"
+                        android:scrollbars="vertical"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:padding="10dp"
+                        android:textSize="18sp"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/bg_edit_text1"
+                         android:id="@+id/proweight"
+                        />
 
                     <EditText
                         android:layout_width="match_parent"
@@ -120,7 +142,7 @@
                         android:textSize="18sp"
                         android:layout_gravity="bottom"
                         android:background="@drawable/bg_edit_text1"
-
+                        android:id="@+id/purchaseprice"
                         />
 
                     <EditText
@@ -140,6 +162,27 @@
                         android:textSize="18sp"
                         android:layout_gravity="bottom"
                         android:background="@drawable/bg_edit_text1"
+                         android:id="@+id/saleprice"
+                        />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:text="Take picture"
+                        android:visibility="visible"
+                        android:id="@+id/takepic"
+                        />
+
+                    <ImageView android:id="@+id/imageView2"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:visibility="gone"
 
                         />
 
