@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Sportika.iml" filepath="$PROJECT_DIR$/Sportika.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/sportika-android.iml" filepath="$PROJECT_DIR$/.idea/sportika-android.iml" />
     </modules>
   </component>
 </project>
